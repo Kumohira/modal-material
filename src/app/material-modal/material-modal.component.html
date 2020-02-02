@@ -1,0 +1,17 @@
+
+<div mat-dialog-content>
+  <p>name ?</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="dto.attribute">
+  </mat-form-field>
+
+  <p>description ?</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="dto.value">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="dto" cdkFocusInitial>Ok</button>
+</div>
